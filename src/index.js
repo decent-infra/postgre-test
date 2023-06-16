@@ -1,6 +1,10 @@
 const http = require("http");
 const { Pool } = require("pg");
 
+for (let i = 0; i < 10; i++) {
+  console.log("Hello, world!");
+}
+
 // Configure the PostgreSQL connection
 const pool = new Pool({
   user: "admin",
